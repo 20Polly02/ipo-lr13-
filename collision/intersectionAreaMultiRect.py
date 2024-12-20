@@ -1,8 +1,6 @@
 from .isCorrectRect import isCorrectRect
-
 class RectCorrectError(Exception):
     pass
-
 def intersectionAreaMultiRect(rects_coords):
     uniq_c = []
 
