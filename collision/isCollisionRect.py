@@ -1,13 +1,12 @@
 class RectCorrectError(Exception):
     pass
 from .isCorrectRect import isCorrectRect
-
 def isCollisionRect(list_1,list_2):
     rect_1, rect_2 = list_1, list_2
     if not isCorrectRect(rect_1):
-        raise RectCorrectError("1й прямоугольник некоректный")
+        raise RectCorrectError("Первый прямоугольник некоректный")
     if not isCorrectRect(rect_2):
-        raise RectCorrectError("2й прямоугольник некоректный")
+        raise RectCorrectError("Второй прямоугольник некоректный")
     else:
         (x1,y1),(x2,y2) = rect_1
         (x3,y3),(x4,y4) = rect_2
